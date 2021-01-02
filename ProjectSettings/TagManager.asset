@@ -8,6 +8,8 @@ TagManager:
   - Wall
   - Door
   - LiftDoor
+  - wireBox
+  - Trash
   layers:
   - Default
   - TransparentFX
