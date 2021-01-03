@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+//Kapcsolodo tutorial:https://bit.ly/2X5TV9d
 public class WireTask : MonoBehaviour
 {
     public List<Color> _wireColors = new List<Color>();

@@ -36,8 +36,7 @@ public class Wire : MonoBehaviour,
                         _canvas.worldCamera,
                         out movePos);
             _lineRenderer.SetPosition(0, transform.position);
-            _lineRenderer.SetPosition(1,
-                 _canvas.transform.TransformPoint(movePos));
+            _lineRenderer.SetPosition(1,_canvas.transform.TransformPoint(movePos));
         }
         else
         {
