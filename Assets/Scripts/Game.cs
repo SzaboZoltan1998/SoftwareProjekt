@@ -11,12 +11,14 @@ public class Game : MonoBehaviour
     bool taskOpened = false;
     public Button use;
     public GameObject taskWindow;
+    public GameObject wireTask;
 
     // Start is called before the first frame update
     void Start()
     {
         use.gameObject.SetActive(false);
         taskWindow.SetActive(false);
+        wireTask.SetActive(false);
     }
 
     void Awake()
@@ -53,12 +55,30 @@ public class Game : MonoBehaviour
     {
         //print(interactable.name);
         taskOpened = true;
-        taskWindow.transform.GetChild(0).GetComponent<Text>().text = interactable.name;
-        taskWindow.SetActive(true);
+        if (interactable.GetComponent<Interacteble>().isFinished == true)
+        {
+            return;
+        }
+        else if (interactable.name == "WireBox")
+        {
+            wireTask.GetComponent<WireTask>().IsTaskCompleted = false;
+            wireTask.SetActive(true);
+            if (wireTask.GetComponent<WireTask>().IsTaskCompleted)
+            {
+                interactable.GetComponent<Interacteble>().isFinished = true;
+
+            }
+        }
+        else
+        {
+            taskWindow.transform.GetChild(0).GetComponent<Text>().text = interactable.name;
+            taskWindow.SetActive(true);
+        }
     }
 
     public void Close()
     {
+        wireTask.SetActive(false);
         taskWindow.SetActive(false);
         taskOpened = false;
     }

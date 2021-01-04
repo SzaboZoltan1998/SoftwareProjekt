@@ -318,7 +318,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.05
+    widthMultiplier: 0.005
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -675,7 +675,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.05
+    widthMultiplier: 0.005
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -8477,7 +8477,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.05
+    widthMultiplier: 0.005
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -8976,7 +8976,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.05
+    widthMultiplier: 0.005
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -24712,6 +24712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64ba1cc0ee3a8e4c8b1ad9428222b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFinished: 0
 --- !u!43 &522996679
 Mesh:
   m_ObjectHideFlags: 0
@@ -30051,6 +30052,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   use: {fileID: 1262485259}
   taskWindow: {fileID: 1723092060}
+  wireTask: {fileID: 1041526527}
 --- !u!1 &727057659
 GameObject:
   m_ObjectHideFlags: 0
@@ -33007,7 +33009,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.05
+    widthMultiplier: 0.005
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -34640,6 +34642,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64ba1cc0ee3a8e4c8b1ad9428222b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFinished: 0
 --- !u!1 &890326467
 GameObject:
   m_ObjectHideFlags: 0
@@ -44897,6 +44900,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireBox
       objectReference: {fileID: 0}
+    - target: {fileID: 1122017456068817315, guid: 033e58b4da6dd3146a5b5ae8d7e65e29,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1122017456068817315, guid: 033e58b4da6dd3146a5b5ae8d7e65e29,
+        type: 3}
+      propertyPath: isFinished
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 033e58b4da6dd3146a5b5ae8d7e65e29, type: 3}
 --- !u!1 &1210757237
@@ -45508,7 +45521,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.05
+    widthMultiplier: 0.005
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -59357,7 +59370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1639125947
 Light:
   m_ObjectHideFlags: 0
@@ -61189,6 +61202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64ba1cc0ee3a8e4c8b1ad9428222b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFinished: 0
 --- !u!1001 &1704944723
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -67347,6 +67361,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WireBox
       objectReference: {fileID: 0}
+    - target: {fileID: 1122017456068817315, guid: 033e58b4da6dd3146a5b5ae8d7e65e29,
+        type: 3}
+      propertyPath: isFinished
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 033e58b4da6dd3146a5b5ae8d7e65e29, type: 3}
 --- !u!1 &1984179620
@@ -67484,7 +67503,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.05
+    widthMultiplier: 0.005
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -69984,7 +70003,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.05
+    widthMultiplier: 0.005
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -72950,6 +72969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64ba1cc0ee3a8e4c8b1ad9428222b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFinished: 0
 --- !u!1001 &239637734358901624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -73249,6 +73269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64ba1cc0ee3a8e4c8b1ad9428222b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFinished: 0
 --- !u!1 &919132147661986690
 GameObject:
   m_ObjectHideFlags: 0
@@ -73330,6 +73351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64ba1cc0ee3a8e4c8b1ad9428222b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFinished: 0
 --- !u!1 &1216306834356738548
 GameObject:
   m_ObjectHideFlags: 0
@@ -73363,6 +73385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64ba1cc0ee3a8e4c8b1ad9428222b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFinished: 0
 --- !u!54 &1216306834356738550
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -74240,6 +74263,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e64ba1cc0ee3a8e4c8b1ad9428222b96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isFinished: 0
 --- !u!1 &5813187926220036112
 GameObject:
   m_ObjectHideFlags: 0

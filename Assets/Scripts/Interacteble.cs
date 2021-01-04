@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Interacteble : MonoBehaviour
 {
+    public bool isFinished ;
     private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")

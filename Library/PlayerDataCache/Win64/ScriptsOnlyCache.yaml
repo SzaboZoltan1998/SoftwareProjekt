@@ -718,7 +718,7 @@ ScriptsOnlyBuild:
     className: CinemachineBlendListCamera
   - hash:
       serializedVersion: 2
-      Hash: 78e72149cecb97609d24be531904eb60
+      Hash: 4a3fceb1e2f7f7d24348b3fe23058e46
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Game
