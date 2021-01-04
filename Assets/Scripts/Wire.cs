@@ -74,7 +74,7 @@ public class Wire : MonoBehaviour,
     {
         if (!IsLeftWire) { return; }
         // Is is successful, don't draw more lines!
-        if (IsSuccess) { return; }
+        //if (IsSuccess) { return; }
         _isDragStarted = true;
         _wireTask.CurrentDraggedWire = this;
     }
